@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+</head>
+<body>
+
+<div class="result">
+    <h1>The Dog Breed is <span style="color:#f4b400">{{ breed }}</span></h1>
+    <p>Confidence: {{ confidence }}%</p>
+    <a href="/predict" style="color:#f4b400">Try Another Image</a>
+</div>
+
+</body>
+</html>

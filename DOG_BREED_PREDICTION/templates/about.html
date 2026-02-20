@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+
+{% include "index.html" %}
+
+<div class="section">
+    <h2>Search by Images</h2>
+
+    <div class="breed-grid">
+        {% for b in breeds %}
+        <div class="breed-card">
+            <img src="{{ b.img }}">
+            <p>{{ b.name }}</p>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+</body>
+</html>
