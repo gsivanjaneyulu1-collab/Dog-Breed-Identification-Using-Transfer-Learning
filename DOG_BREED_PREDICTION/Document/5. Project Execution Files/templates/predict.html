@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Predict</title>
+    <link rel="stylesheet" href="/static/css/main.css">
+</head>
+<body>
+
+{% include "index.html" %}
+
+<div class="section">
+    <h2>Dog Breed Identification</h2>
+
+    <form action="/output" method="POST" enctype="multipart/form-data">
+        <input type="file" name="image" required>
+        <button type="submit">Predict</button>
+    </form>
+</div>
+
+</body>
+</html>
